@@ -1,0 +1,59 @@
+project:
+  type: website
+  resources:
+    - "css/"
+    - "js/"
+    - "*.html"
+
+website:
+  title: "Department of Biochemistry and Microbiology"
+  site-url: "https://bmrxcu.github.io"
+  repo-url: "https://github.com/bmrxcu"
+  # favicon: file/path/to/image.png
+  # google-analytics: "UA-177339812-1"
+  twitter-card: true
+  #back-to-top-navigation: true
+  page-navigation: false
+  search: true
+  
+  navbar:
+    search: true
+    title: false
+    logo-alt: "CURx-BiochemMicro"
+    # background: "#F6F5F3"
+    logo: assets/img/logo.png
+    right: 
+      - icon: github
+        href: https://github.com/bmrxcu
+      - icon: twitter
+        href: https://twitter.com/
+      
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Research"
+        href: research/research.qmd
+      - text: "Publication"
+        href: publication/index.qmd
+      - text: Members
+        href: member/index.qmd
+      - text: Services
+        href: service/index.qmd
+      - text: Curriculum
+        href: curriculum/index.qmd
+      - text: News
+        href: news/index.qmd
+      - about.qmd
+  page-footer: 
+    background: "#F6F5F3"
+    center: Copyright © 2024, Natapol Pornputtapong Made with 
+      [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/) 
+    
+
+format:
+  html:
+    theme: materia.scss
+    toc: true
+
+
+

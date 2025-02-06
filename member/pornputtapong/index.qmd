@@ -1,0 +1,74 @@
+---
+title: &TITLE Natapol Pornputtapong
+last: Pornputtapong
+first: Natapol
+people_group: "faculty"
+email: "natapol.p@chula.ac.th"
+fields: Systems immunology
+subtitle: "Assistant Professor"
+description: ""
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: solana
+  image-shape: round
+  image: avatar.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:natapol.p@chula.ac.th
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com/natapol
+    - icon: envelope-at
+      text: Email
+      href: mailto://natapol.p@chula.ac.th
+    - icon: circle-fill
+      text: ORCID
+      href: https://orcid.org/0000-0002-3833-0537
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+
+- 2014 | PhD in Bioscience | Chalmers University of Technology, Sweden
+- 2008 | MSc in Biomedicinal Chemistry | Chulalongkorn University, Thailand
+- 2004 | BSc in Pharmaceutical Sciences | Chulalongkorn University, Thailand
+
+<br>
+
+## Experiences
+
+- Oct 2021 - Present | Head of Biochemistry and Microbiology Department
+- Oct 2017 - Sep 2021 | Assistant Dean of Educational Innovation
+- May 2014 - Apr 2016 | Postdoctoral Associate | Yale School of Medicine, CT, USA
+- Apr 2008 - May 2010 | Research assistant Systems biology lab
+- Sep 2007 - Mar 2008 | Research assistant Protein ligands lab
+- Mar 2004 - Aug 2007 | Research assistant Bioinformatic Lab
+
+:::
+
+## {{< meta first >}}'s Publications
+
+:::{#pubs}
+:::

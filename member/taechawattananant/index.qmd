@@ -1,0 +1,68 @@
+---
+title: &TITLE Pasrawin Taechawattananant
+last: Taechawattananant
+first: Pasrawin
+people_group: "faculty"
+email: "pasrawin.t@chula.ac.th"
+fields: Bioinformatics, Mass Spectrometry
+subtitle: "Lecturer"
+description: ""
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publication/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: solana
+  image-shape: round
+  image: avatar.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:pasrawin.t@chula.ac.th
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: envelope-at
+      text: Email
+      href: mailto://pasrawin.t@chula.ac.th
+    - icon: circle-fill
+      text: ORCID
+      href: https://orcid.org/0000-0002-3833-0537
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+
+- 2020 | Doctor of Pharmaceutical Sciences (Bioinformatics) | Kyoto University, Kyoto, Japan
+- 2015 | Master of Pharmaceutical Sciences (Proteomics) | Kyoto University, Kyoto, Japan
+- 2012 | BSc in Pharmaceutical Sciences (First Class Honors) | Chulalongkorn University, Thailand
+
+<br>
+
+## Experiences
+
+- 2021 - Present | Lecturer | Department of Biochemistry and Microbiology, Chulalongkorn University, Bangkok, Thailand
+- 2020 | Postdoctoral Researcher | Graduate School of Pharmaceutical Sciences Kyoto University, Kyoto, Japan
+- 2012 - 2013 | Vaccine Researcher | Research and Development Institute, The Government Pharmaceutical Organization (GPO), Bangkok, Thailand
+
+:::
+
+## {{< meta first >}}'s Publications
+
+:::{#pubs}
+:::

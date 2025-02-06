@@ -1,0 +1,24 @@
+---
+title: Metabolomics
+alias: &ALIAS mass_spectrometry
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publication/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+![](featured.jpg)
+
+
+Metabolomic studies in food and nutrition. Mass spectrometry-based metabolomics approach
+
+
+:::{#pubs}
+:::

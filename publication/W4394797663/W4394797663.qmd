@@ -1,0 +1,27 @@
+---
+DOI: https://doi.org/10.1007/s00262-024-03685-7
+ISSN: 0340-7004
+URL: https://doi.org/10.1007/s00262-024-03685-7
+author:
+- Nithidol Sakunrangsit
+- Nattarika Khuisangeam
+- Thananya Inthanachai
+- Varalee Yodsurang
+- Pasrawin Taechawattananant
+- Koramit Suppipat
+- Supannikar Tawinwung
+categories: ["systems_immunology"]
+container_title: Cancer Immunology Immunotherapy
+id: https://openalex.org/W4394797663
+issue: '6'
+issued:
+  date-parts: '2024-04-15'
+license: cc-by
+note: Springer Science+Business Media
+page: None - None
+title: Incorporating IL7 receptor alpha signaling in the endodomain of B7H3-targeting
+  chimeric antigen receptor T cells mediates antitumor activity in glioblastoma
+type: journal-article
+volume: '73'
+year: 2024
+---
