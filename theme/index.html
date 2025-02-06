@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publications – Department of Biochemistry and Microbiology</title>
+<title>Research Areas – Department of Biochemistry and Microbiology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,20 +71,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
+    const listingTargetEl = window.document.querySelector('#listing-research .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-pub_number','listing-title','listing-container_title','listing-author','listing-URL',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-DOI","listing-ISSN","listing-URL","listing-author","listing-categories","listing-container_title","listing-id","listing-issue","listing-issued","listing-license","listing-note","listing-page","listing-title","listing-type","listing-volume","listing-year","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
+    window['quarto-listings']['listing-research'] = new List('listing-research', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -128,8 +128,9 @@ window.Quarto = {
 };
 </script>
 
-<meta name="twitter:title" content="Publications – Department of Biochemistry and Microbiology">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Research Areas – Department of Biochemistry and Microbiology">
+<meta name="twitter:image" content="https://bmrxcu.github.io/theme/metabolomics/featured.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -228,7 +229,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publications</h1>
+<h1 class="title">Research Areas</h1>
 </div>
 
 
@@ -245,118 +246,46 @@ window.Quarto = {
 </header>
 
 
-<hr>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-pubs-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-pubs'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-URL" data-direction="asc">
-          URL
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-         <option value="listing-container_title" data-direction="asc">
-          container_title
-        </option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<!-- <style> -->
+<!--   body { -->
+<!--   background-image: url('images/chalkboard_sm.jpg'); -->
+<!--   background-size: cover; -->
+<!--   background-repeat: no-repeat; -->
+<!-- } -->
+<!-- </style> -->
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-research">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1738814886820" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<a href="../theme/metabolomics/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../theme/metabolomics/featured.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Metabolomics
+</h5>
+<div class="card-text listing-description">
+Metabolomic studies in food and nutrition. Mass spectrometry-based metabolomics approach
 </div>
-<div class="list quarto-listing-default">
-    
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
 
-        <div class="quarto-post image-right" data-index="0" data-categories="c3lzdGVtc19pbW11bm9sb2d5" data-listing-file-modified-sort="1738814886816" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-            <div class="thumbnail">
-                <!-- <a href="/publication/W4394797663/W4394797663.qmd">
-
-                <p>
-                    
-
-                </p>
-
-                </a> -->
-            </div>
-            <div class="body">
-                <!-- <a href="/publication/W4394797663/W4394797663.qmd"> -->
-                <div class="no-anchor listing-pub-title listing-title">
-                    Incorporating IL7 receptor alpha signaling in the endodomain of B7H3-targeting chimeric antigen receptor T cells mediates antitumor activity in glioblastoma
-                </div>
-                <!-- </a> -->
-                <!-- <a href="/publication/W4394797663/W4394797663.qmd"> -->
-
-                <div class="listing-pub-author listing-author">
-                    Nithidol Sakunrangsit, Nattarika Khuisangeam, Thananya Inthanachai, Varalee Yodsurang, Pasrawin Taechawattananant, Koramit Suppipat, Supannikar Tawinwung<br>
-                </div>
-
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>
-                            Cancer Immunology Immunotherapy
-                        </i>
-                        , <b>
-                                6
-                            </b>
-                            
-                                , None - None
-                                        
-                                             (2024)<br>
-
-                                                        
-
-                </div>
-
-                <!-- </a> -->
-                <!--               
-                <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('systems_immunology'); return false;">systems_immunology</div>
-                
-                </div>
-                -->
-            </div>
-            <div class="metadata">
-                <!-- <a href="/publication/W4394797663/W4394797663.qmd"> -->
-                <div class="listing-pub-number">
-                    <br>
-                </div>
-
-                <!-- </a> -->
-                
-                    <div class="listing-pub-url">
-
-                        <a href="https://doi.org/10.1007/s00262-024-03685-7">
-                            <p style="color:#8250E6;">journal URL <i class="bi bi-box-arrow-up-right"></i></p>
-                        </a>
-                    </div>
-                    
-
-                        
-
-            </div>
-        </div>
-
-        
 </div>
-
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-
-
-
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
