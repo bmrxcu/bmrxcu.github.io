@@ -60,7 +60,7 @@ website:
 
 format:
   html:
-    theme: materia.scss
+    theme: theme.scss
     toc: true
 
 
