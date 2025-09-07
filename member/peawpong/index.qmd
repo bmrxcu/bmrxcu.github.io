@@ -1,0 +1,58 @@
+---
+title: &TITLE Kanyanat Peawpong
+last: Peawpong
+first: Kanyanat
+people_group: "staff"
+email: "preem25466@gmail.com"
+fields: ""
+subtitle: "Science Service Officer P7"
+description: ""
+image: 42.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: solana
+  image-shape: round
+  image: 42.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:preem25466@gmail.com
+
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+
+- 2014 | PhD | Newcastle University, UK
+- 2008 | MSc | University of Edinburgh, UK
+- 2004 | BSc | Silpakorn University, Thailand
+
+<br>
+
+## Experiences
+
+- Oct 2021 - Present | Assistant Dean of Graduation Study
+
+:::
+
+## {{< meta first >}}'s Publications
+
+:::{#pubs}
+:::

@@ -1,0 +1,66 @@
+<div class="quarto-about-solana column-body">
+    <div class="about-entity">
+        <div class="entity-contents">
+            <%= about.title %> 
+
+            <% if (about.links) { %>
+                <div class="about-links">
+                    <% for (const link of about.links) { %>
+                        <a href="<%= link.href %>" class="about-link" rel="<%= link.rel %>" target="<%= link.target %>">
+                            <% if (link.icon) { %>
+                                <i class="<%= link.icon %>"></i>
+                            <% } else if (link.text == "ORCID") { %>
+                                <i class="ai ai-orcid"></i>
+                            <% } %>
+                            <span class="about-link-text"><%= link.text %></span>                           
+                        </a>
+                    <% } %>
+                </div>
+            <% } %>
+
+            <div class="about-contents"><%= about.body %></div>
+        </div>
+
+
+        <% 
+            const imgClz = about.options['image-shape'] ? `
+            ${about.options['image-shape']}` : ""; 
+
+            const imageSize = () => {
+                const width = about.options['image-width'];
+                if (width !== undefined) {
+                    if (about.options['image-shape'] === "round") {
+                        return `style='height: ${width}; width: ${width};'`;
+                    } else {
+                        return `style='width: ${width};'`;
+                    }
+                } else {
+                    return "";
+                }
+            }
+
+            const altText = () => {
+                if (about['image-alt']) {
+                    return `alt="${about['image-alt']}" `;
+                } else {
+                    return "";
+                }
+            }
+
+            const title = () => {
+                if (about['image-title']) {
+                    return ` title="${about['image-title']}"`;
+                } else {
+                    return "";
+                }
+            }
+            const imgOpts = about.options['image-options'] || {};
+            const customClz = imgOpts.classes !== undefined ? imgOpts.classes : "";
+        %> 
+
+        <% if (about.image) { %>
+        <!-- <img src="<%= about.image %>" <%= altText() %> class="about-image<%= imgClz %> <%= customClz %>" <%= imageSize() %> <%= title() %> /> -->
+        <img src="<%= about.image %>" <%= altText() %> class="about-image<%= imgClz %> <%= customClz %>" style="width: 250px;" <%= title() %> />
+        <%}%>
+    </div>
+</div>

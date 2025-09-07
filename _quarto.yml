@@ -55,13 +55,17 @@ website:
   page-footer: 
     background: "#F6F5F3"
     center: Copyright © 2024, Natapol Pornputtapong Made with 
-      [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/) 
+      [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)
     
 
 format:
   html:
     theme: theme.scss
     toc: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
 
 
 

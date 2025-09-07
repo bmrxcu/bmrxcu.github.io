@@ -1,0 +1,58 @@
+---
+title: &TITLE Nakorn Khantong
+last: Khantong
+first: Nakorn
+people_group: "staff"
+email: "nakorn.k@chula.ac.th"
+fields: ""
+subtitle: "Permanent Officer"
+description: ""
+image: nakorn.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: solana
+  image-shape: round
+  image: nakorn.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:nakorn.k@chula.ac.th
+
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+
+- 2014 | PhD | Newcastle University, UK
+- 2008 | MSc | University of Edinburgh, UK
+- 2004 | BSc | Silpakorn University, Thailand
+
+<br>
+
+## Experiences
+
+- Oct 2021 - Present | Assistant Dean of Graduation Study
+
+:::
+
+## {{< meta first >}}'s Publications
+
+:::{#pubs}
+:::

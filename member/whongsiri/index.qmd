@@ -1,0 +1,66 @@
+---
+title: &TITLE Patcharawalai Whongsiri
+last: Patcharawalai
+first: Whongsiri
+people_group: "faculty"
+email: "patcharawalai.wh@chula.ac.th"
+fields: Molecular Biology and Epigenetics
+subtitle: "Assistant Professor"
+description: "Gene regulation by DNA methylation and histone modifications in cancer"
+image: Patcharawalai-Whongsiri.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: solana
+  image-shape: round
+  image: Patcharawalai-Whongsiri.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:patcharawalai.wh@chula.ac.th
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: envelope-at
+      text: Email
+      href: mailto://patcharawalai.wh@chula.ac.th
+    - icon: circle-fill
+      text: ORCID
+      href: https://orcid.org/0000-0002-3833-0537
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+
+- 2014 | PhD | Newcastle University, UK
+- 2008 | MSc | University of Edinburgh, UK
+- 2004 | BSc | Silpakorn University, Thailand
+
+<br>
+
+## Experiences
+
+- Oct 2021 - Present | Assistant Dean of Graduation Study
+
+:::
+
+## {{< meta first >}}'s Publications
+
+:::{#pubs}
+:::
