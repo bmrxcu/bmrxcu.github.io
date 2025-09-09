@@ -31,7 +31,7 @@ website:
           - text: Theme
             href: theme/index.qmd
           - text: Publications
-            href: publication/index.qmd
+            href: publications/index.qmd
       - text: Members
         href: member/index.qmd
       - text: Services
