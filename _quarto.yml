@@ -4,7 +4,6 @@ project:
     - "css/"
     - "js/"
     - "*.html"
-  output-dir: docs
 
 website:
   title: "Department of Biochemistry and Microbiology"
